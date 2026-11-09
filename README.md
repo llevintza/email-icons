@@ -15,6 +15,7 @@ PNG icons for email signatures, resumes and other documents, served from GitHub 
 | <img src="img/color/github.png" width="16"> GitHub | `https://llevintza.github.io/email-icons/img/color/github.png` |
 | <img src="img/color/x.png" width="16"> X | `https://llevintza.github.io/email-icons/img/color/x.png` |
 | <img src="img/color/zoom.png" width="16"> Zoom | `https://llevintza.github.io/email-icons/img/color/zoom.png` |
+| <img src="img/color/web.png" width="16"> Website / portfolio | `https://llevintza.github.io/email-icons/img/color/web.png` |
 
 ## Black-square set (`img/`, 512×512)
 
@@ -46,6 +47,7 @@ The SVG source for each new icon is in `src/`. PNGs are rendered from them with 
 |---|---|---|
 | LinkedIn, GitHub, X | [Simple Icons](https://simpleicons.org) v13.21.0 paths, in each brand's colour (#0A66C2, #181717, #000000) | CC0 1.0 |
 | Phone glyph | Material Design Icons "call" path, white on a #1E88E5 circle | Apache 2.0 |
+| Website globe | Material Design Icons "public" path in #3498DB (the signature's rule colour) | Apache 2.0 |
 | Zoom | A plain video-camera shape drawn for this repo, in Zoom blue #0B5CFF / white on black | — |
 | `img/github.png`, `linkedin.png`, `telephone-symbol-button.png`, `twitter.png` | Original 2025 set | as before |
 
