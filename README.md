@@ -1,83 +1,58 @@
 # Email Icons
 
-A collection of high-quality PNG icons for use in email signatures, resumes, and other professional documents. This repository serves as a personal CDN for commonly used icons.
+PNG icons for email signatures, resumes and other documents, served from GitHub Pages as a small personal CDN.
 
-## Available Icons
+**Base URL:** `https://llevintza.github.io/email-icons/img/`
 
-| Icon | Filename | Preview |
-|------|----------|---------|
-| GitHub | `github.png` | ![GitHub](img/github.png) |
-| LinkedIn | `linkedin.png` | ![LinkedIn](img/linkedin.png) |
-| Phone | `telephone-symbol-button.png` | ![Phone](img/telephone-symbol-button.png) |
-| Twitter | `twitter.png` | ![Twitter](img/twitter.png) |
+> **Never rename, overwrite or delete a published file.** Every email already sent points at these URLs. To change an icon, add a new file (e.g. `x-v2.png`) and point new signatures at it.
+
+## Colored set (`img/color/`, 64×64, used by the email signature)
+
+| Icon | URL |
+|---|---|
+| <img src="img/color/phone.png" width="16"> Phone | `https://llevintza.github.io/email-icons/img/color/phone.png` |
+| <img src="img/color/linkedin.png" width="16"> LinkedIn | `https://llevintza.github.io/email-icons/img/color/linkedin.png` |
+| <img src="img/color/github.png" width="16"> GitHub | `https://llevintza.github.io/email-icons/img/color/github.png` |
+| <img src="img/color/x.png" width="16"> X | `https://llevintza.github.io/email-icons/img/color/x.png` |
+| <img src="img/color/zoom.png" width="16"> Zoom | `https://llevintza.github.io/email-icons/img/color/zoom.png` |
+| <img src="img/color/web.png" width="16"> Website / portfolio | `https://llevintza.github.io/email-icons/img/color/web.png` |
+
+## Black-square set (`img/`, 512×512)
+
+| Icon | URL |
+|---|---|
+| <img src="img/telephone-symbol-button.png" width="16"> Phone | `https://llevintza.github.io/email-icons/img/telephone-symbol-button.png` |
+| <img src="img/linkedin.png" width="16"> LinkedIn | `https://llevintza.github.io/email-icons/img/linkedin.png` |
+| <img src="img/github.png" width="16"> GitHub | `https://llevintza.github.io/email-icons/img/github.png` |
+| <img src="img/x.png" width="16"> X | `https://llevintza.github.io/email-icons/img/x.png` |
+| <img src="img/zoom.png" width="16"> Zoom | `https://llevintza.github.io/email-icons/img/zoom.png` |
+
+`img/twitter.png` is the same X logo as `img/x.png`. It's kept so links that already use it keep working.
 
 ## Usage
 
-### Direct Links
-
-You can use these icons directly in your documents by referencing the raw GitHub URLs:
-
-```
-https://raw.githubusercontent.com/llevintza/email-icons/main/img/github.png
-https://raw.githubusercontent.com/llevintza/email-icons/main/img/linkedin.png
-https://raw.githubusercontent.com/llevintza/email-icons/main/img/telephone-symbol-button.png
-https://raw.githubusercontent.com/llevintza/email-icons/main/img/twitter.png
-```
-
-### HTML Usage
-
 ```html
-<img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/github.png" alt="GitHub" width="24" height="24">
-<img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/linkedin.png" alt="LinkedIn" width="24" height="24">
-<img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/telephone-symbol-button.png" alt="Phone" width="24" height="24">
-<img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/twitter.png" alt="Twitter" width="24" height="24">
+<img src="https://llevintza.github.io/email-icons/img/color/github.png" width="16" height="16" alt="GitHub" style="display:block">
 ```
 
-### Markdown Usage
+Use the GitHub Pages URLs. The old `raw.githubusercontent.com/...` URLs still work, but raw.githubusercontent.com is rate-limited and only cached for about 5 minutes, so it isn't meant for images embedded in email.
 
-```markdown
-![GitHub](https://raw.githubusercontent.com/llevintza/email-icons/main/img/github.png)
-![LinkedIn](https://raw.githubusercontent.com/llevintza/email-icons/main/img/linkedin.png)
-![Phone](https://raw.githubusercontent.com/llevintza/email-icons/main/img/telephone-symbol-button.png)
-![Twitter](https://raw.githubusercontent.com/llevintza/email-icons/main/img/twitter.png)
-```
+Show icons at 16px. The 64px files keep them sharp on high-resolution screens.
 
-## Email Signature Example
+## Sources and licences
 
-```html
-<a href="https://github.com/llevintza">
-  <img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/github.png" alt="GitHub" width="20" height="20">
-</a>
-<a href="https://linkedin.com/in/yourprofile">
-  <img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/linkedin.png" alt="LinkedIn" width="20" height="20">
-</a>
-<a href="tel:+1234567890">
-  <img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/telephone-symbol-button.png" alt="Phone" width="20" height="20">
-</a>
-<a href="https://twitter.com/yourhandle">
-  <img src="https://raw.githubusercontent.com/llevintza/email-icons/main/img/twitter.png" alt="Twitter" width="20" height="20">
-</a>
-```
+The SVG source for each new icon is in `src/`. PNGs are rendered from them with headless Chrome, at 64×64 for the colored set and 512×512 for the black Zoom icon.
 
-## File Information
+| Icon | Source | Licence |
+|---|---|---|
+| LinkedIn, GitHub, X | [Simple Icons](https://simpleicons.org) v13.21.0 paths, in each brand's colour (#0A66C2, #181717, #000000) | CC0 1.0 |
+| Phone glyph | Material Design Icons "call" path, white on a #1E88E5 circle | Apache 2.0 |
+| Website globe | Material Design Icons "public" path in #3498DB (the signature's rule colour) | Apache 2.0 |
+| Zoom | A plain video-camera shape drawn for this repo, in Zoom blue #0B5CFF / white on black | — |
+| `img/github.png`, `linkedin.png`, `telephone-symbol-button.png`, `twitter.png` | Original 2025 set | as before |
 
-- **Format**: PNG
-- **Recommended size**: 16x16, 20x20, or 24x24 pixels for email signatures
-- **Background**: Transparent (where applicable)
-- **Optimization**: Files are optimized for web delivery
-
-## Contributing
-
-Feel free to suggest additional icons by opening an issue. All icons should be:
-- High quality PNG format
-- Appropriate for professional use
-- Properly sized and optimized
-- Have transparent backgrounds where possible
-
-## License
-
-These icons are for personal and professional use. Please respect the original creators' rights and terms of service for each platform represented.
+LinkedIn, GitHub, X and Zoom are trademarks of their owners. These icons are used only to link to Leo's own profiles and booking page.
 
 ---
 
-*This repository is maintained by [llevintza](https://github.com/llevintza)*
+*Maintained by [llevintza](https://github.com/llevintza)*
